@@ -93,9 +93,16 @@ Vào `Tools > Antigravity MCP > Control Panel` trong Unity Editor để theo dõ
 
 ### Video hướng dẫn thao tác từng bước
 
-Bản xem trước cắt trực tiếp từ video hướng dẫn thao tác thật (`03:23`, có phụ đề tiếng Việt và thuyết minh đầy đủ 2 phần):
 
-![Bản xem trước video hướng dẫn thao tác thật Unity-Antigravity-MCP trên Unity 6 và Antigravity IDE](assets/docs/demo-walkthrough-preview.gif)
+
+
+
+https://github.com/user-attachments/assets/8a3033b6-c72f-4f66-8cb6-8139bae33f1b
+
+
+
+https://github.com/user-attachments/assets/deb30f9f-58d9-4469-9b26-4aafb3c0b7e9
+
 
 Nội dung 2 phần trong video hướng dẫn (`03:23`):
 
