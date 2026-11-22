@@ -1,0 +1,26 @@
+{
+  "name": "com.vinh.antigravity-unity-bridge",
+  "version": "1.0.0",
+  "displayName": "Antigravity IDE & MCP Bridge",
+  "description": "Editor-only bridge connecting Antigravity IDE to Unity 6: native External Script Editor (.csproj/.sln generation), read-only Scene/Hierarchy/SerializedObject/Console/Test inspection, and 7 modular atomic batch executors (Scene/Prefab, uGUI + UI Toolkit, Animation, Particle/VFX, Assets/SO, PackageManager/Tools, Universal SerializedObject) with 2-layer owner approval, Undo rollback, and Operation Journal recovery.",
+  "unity": "6000.0",
+  "keywords": [
+    "antigravity",
+    "mcp",
+    "ai",
+    "ide",
+    "code-editor",
+    "automation",
+    "ui-toolkit",
+    "unity6"
+  ],
+  "documentationUrl": "https://github.com/QuangVinh-coder/Unity-Antigravity-MCP#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/QuangVinh-coder/Unity-Antigravity-MCP.git"
+  },
+  "author": {
+    "name": "QuangVinh-coder",
+    "url": "https://github.com/QuangVinh-coder"
+  }
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Comment C# tiếng Việt tự nhiên"
+  short_description: "Giải thích đúng điểm khó, bỏ comment máy móc trong Unity/C#"
+  default_prompt: "Hãy dùng $vietnamese-code-comments để review và chỉnh comment tiếng Việt trong phạm vi code tôi chỉ định. Ưu tiên đúng ngữ cảnh, tự nhiên và không sửa logic gameplay."

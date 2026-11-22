@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 360" width="1100" height="360">
+  <rect width="1100" height="360" rx="16" fill="#0d1322" stroke="#334155" stroke-width="2"/>
+  <text x="36" y="42" fill="#f8fafc" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700">Multi-Agent Orchestrator Kit (Optional Power Workflow)</text>
+  <text x="36" y="66" fill="#94a3b8" font-family="Segoe UI, Arial, sans-serif" font-size="13">Virtual Branches (agents/branches/) · Disjoint &amp; Conflict Clusters · Comment-Guard · Quota/Wi-Fi Auto-Recover · 2-Min Watchdog</text>
+
+  <!-- Orchestrator Top -->
+  <rect x="370" y="88" width="360" height="58" rx="10" fill="#1e1b4b" stroke="#818cf8" stroke-width="2"/>
+  <text x="550" y="114" text-anchor="middle" fill="#e0e7ff" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700">ORCHESTRATOR (Antigravity Gemini / Claude)</text>
+  <text x="550" y="134" text-anchor="middle" fill="#a5b4fc" font-family="Segoe UI, Arial, sans-serif" font-size="12">Plan Gates 0-7 · Delegation Brief · Scorecard G1-G10</text>
+
+  <!-- Lines Down -->
+  <g stroke="#64748b" stroke-width="2">
+    <line x1="440" y1="146" x2="180" y2="190"/>
+    <line x1="550" y1="146" x2="550" y2="190"/>
+    <line x1="660" y1="146" x2="920" y2="190"/>
+  </g>
+
+  <!-- Lane 1 -->
+  <rect x="36" y="190" width="290" height="140" rx="12" fill="#132238" stroke="#38bdf8" stroke-width="2"/>
+  <text x="181" y="216" text-anchor="middle" fill="#7dd3fc" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">Lane 1 (Gemini Executor)</text>
+  <text x="54" y="242" fill="#cbd5e1" font-family="Segoe UI, Arial, sans-serif" font-size="12">• UI Toolkit, Shaders, VFX, Prefabs</text>
+  <text x="54" y="264" fill="#cbd5e1" font-family="Segoe UI, Arial, sans-serif" font-size="12">• Self-comments cleanly (VCS)</text>
+  <text x="54" y="286" fill="#cbd5e1" font-family="Segoe UI, Arial, sans-serif" font-size="12">• Runs in agents/branches/lane1/</text>
+  <text x="54" y="310" fill="#67e8f9" font-family="Segoe UI, Arial, sans-serif" font-size="11.5" font-weight="600">Disjoint → Integrates immediately</text>
+
+  <!-- Lane 2 -->
+  <rect x="370" y="190" width="360" height="140" rx="12" fill="#1b2434" stroke="#f59e0b" stroke-width="2"/>
+  <text x="550" y="216" text-anchor="middle" fill="#fde68a" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">Lane 2 (Codex Executor → Gemini Commenter)</text>
+  <text x="388" y="242" fill="#cbd5e1" font-family="Segoe UI, Arial, sans-serif" font-size="12">• Core C# Logic &amp; EditMode Tests (0 comments)</text>
+  <text x="388" y="264" fill="#cbd5e1" font-family="Segoe UI, Arial, sans-serif" font-size="12">• Supports -w1 / -w2 parallel slots &amp; threadId recovery</text>
+  <text x="388" y="286" fill="#cbd5e1" font-family="Segoe UI, Arial, sans-serif" font-size="12">• comment-guard.mjs verifies 100% unchanged C# code</text>
+  <text x="388" y="310" fill="#fbbf24" font-family="Segoe UI, Arial, sans-serif" font-size="11.5" font-weight="600">Quota/Wi-Fi Drop → recover --all resumes exact thread</text>
+
+  <!-- Lane 3 -->
+  <rect x="774" y="190" width="290" height="140" rx="12" fill="#132a24" stroke="#10b981" stroke-width="2"/>
+  <text x="919" y="216" text-anchor="middle" fill="#6ee7b7" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">Watchdog &amp; Live Unity MCP</text>
+  <text x="792" y="242" fill="#cbd5e1" font-family="Segoe UI, Arial, sans-serif" font-size="12">• 2-Min Watchdog (watchdog_runner.mjs)</text>
+  <text x="792" y="264" fill="#cbd5e1" font-family="Segoe UI, Arial, sans-serif" font-size="12">• Cleans VBCSCompiler.dll handle hangs</text>
+  <text x="792" y="286" fill="#cbd5e1" font-family="Segoe UI, Arial, sans-serif" font-size="12">• Auto-restarts stalled subagents/tests</text>
+  <text x="792" y="310" fill="#34d399" font-family="Segoe UI, Arial, sans-serif" font-size="11.5" font-weight="600">Applies Atomic MCP Batches to Unity 6</text>
+</svg>

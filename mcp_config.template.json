@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "unity_antigravity_mcp": {
+      "command": "node",
+      "args": [
+        "{{PLUGIN_DIR}}/server/index.mjs"
+      ]
+    }
+  }
+}

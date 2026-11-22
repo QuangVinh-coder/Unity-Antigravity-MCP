@@ -1,0 +1,21 @@
+{
+  "name": "unity-antigravity-mcp",
+  "displayName": "Unity 6 & C# Antigravity MCP",
+  "version": "1.0.0",
+  "description": "Connects Antigravity IDE to Unity 6 Editor and C# projects: native External Script Editor (.csproj/.sln auto-sync), Scene/Hierarchy/Console/Test inspection, and 7 modular atomic batch tools (Scene/Prefab, uGUI + UI Toolkit, Animation, Particle/VFX, Assets/SO, PackageManager/Tools, Universal SerializedObject) with 2-layer owner approval, Undo rollback, Wi-Fi/quota recovery journal, and a portable Multi-Agent Orchestrator kit.",
+  "logo": "assets/logo.png",
+  "author": {
+    "name": "QuangVinh-coder",
+    "url": "https://github.com/QuangVinh-coder"
+  },
+  "homepage": "https://github.com/QuangVinh-coder/Unity-Antigravity-MCP",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/QuangVinh-coder/Unity-Antigravity-MCP.git"
+  },
+  "suggestedPrompts": [
+    "Check Unity Editor status, missing .csproj files, and recent Console errors",
+    "Sync Unity .csproj and .sln files to fix CS0229 red squiggles in Antigravity IDE",
+    "Inspect the active Scene hierarchy and propose a modular UI, Animation, or Particle batch"
+  ]
+}

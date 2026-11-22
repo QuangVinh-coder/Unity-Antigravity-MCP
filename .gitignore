@@ -1,0 +1,9 @@
+# Generated per-machine MCP config (created by install.ps1 / install.sh from mcp_config.template.json)
+mcp_config.json
+
+# OS & Editor noise
+.DS_Store
+Thumbs.db
+*.log
+node_modules/
+agents/branches/
