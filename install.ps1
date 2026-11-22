@@ -40,8 +40,23 @@ Write-Host "==> [3/4] Generating machine-specific mcp_config.json..." -Foregroun
 $normalizedDir = $InstallDir.Replace("\", "/")
 $templatePath = Join-Path $InstallDir "mcp_config.template.json"
 $configPath = Join-Path $InstallDir "mcp_config.json"
-$template = Get-Content -Path $templatePath -Raw -Encoding UTF8
-$rendered = $template.Replace("{{PLUGIN_DIR}}", $normalizedDir)
+if (Test-Path $templatePath) {
+    $template = Get-Content -Path $templatePath -Raw -Encoding UTF8
+    $rendered = $template.Replace("{{PLUGIN_DIR}}", $normalizedDir)
+} else {
+    $rendered = @"
+{
+  "mcpServers": {
+    "unity_antigravity_mcp": {
+      "command": "node",
+      "args": [
+        "$normalizedDir/server/index.mjs"
+      ]
+    }
+  }
+}
+"@
+}
 [System.IO.File]::WriteAllText($configPath, $rendered, (New-Object System.Text.UTF8Encoding($false)))
 
 Write-Host "==> [4/4] Running self-test (node --test server/test-mcp-server.mjs)..." -ForegroundColor Cyan

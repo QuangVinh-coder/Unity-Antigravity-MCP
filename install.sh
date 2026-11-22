@@ -41,7 +41,22 @@ else
 fi
 
 echo "==> [3/4] Generating machine-specific mcp_config.json..."
-sed "s|{{PLUGIN_DIR}}|${INSTALL_DIR}|g" "${INSTALL_DIR}/mcp_config.template.json" > "${INSTALL_DIR}/mcp_config.json"
+if [[ -f "${INSTALL_DIR}/mcp_config.template.json" ]]; then
+  sed "s|{{PLUGIN_DIR}}|${INSTALL_DIR}|g" "${INSTALL_DIR}/mcp_config.template.json" > "${INSTALL_DIR}/mcp_config.json"
+else
+  cat > "${INSTALL_DIR}/mcp_config.json" <<EOF
+{
+  "mcpServers": {
+    "unity_antigravity_mcp": {
+      "command": "node",
+      "args": [
+        "${INSTALL_DIR}/server/index.mjs"
+      ]
+    }
+  }
+}
+EOF
+fi
 
 echo "==> [4/4] Running self-test..."
 node --test "${INSTALL_DIR}/server/test-mcp-server.mjs"
