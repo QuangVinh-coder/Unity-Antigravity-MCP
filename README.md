@@ -93,17 +93,14 @@ Vào `Tools > Antigravity MCP > Control Panel` trong Unity Editor để theo dõ
 
 ### Video hướng dẫn thao tác từng bước
 
-Bản xem trước có phụ đề tiếng Việt chạy trực tiếp dưới đây (5 bước từ cài plugin, thêm gói UPM, bật khóa trong Control Panel, chạy batch dựng UI + hoàn tác `Ctrl + Z`, đến điều phối Multi-Agent với `comment-guard.mjs`):
+Bản xem trước cắt trực tiếp từ video hướng dẫn thao tác thật (`03:23`, có phụ đề tiếng Việt và thuyết minh đầy đủ 2 phần):
 
-![Video hướng dẫn thao tác từng bước Unity-Antigravity-MCP có phụ đề tiếng Việt](assets/docs/demo-walkthrough-preview.gif)
+![Bản xem trước video hướng dẫn thao tác thật Unity-Antigravity-MCP trên Unity 6 và Antigravity IDE](assets/docs/demo-walkthrough-preview.gif)
 
-Các mốc nội dung chính trong bản hướng dẫn (`74s`, `1920x1080`):
+Nội dung 2 phần trong video hướng dẫn (`03:23`):
 
-1. `00:08` Cài plugin vào Antigravity IDE bằng lệnh một dòng và xác nhận `6/6` bài kiểm thử tự động đạt.
-2. `00:19` Cài gói cầu nối trong Unity 6 qua `Window > Package Manager` (UPM Git URL) và chọn `Antigravity IDE` làm External Script Editor để sửa `CS0229`.
-3. `00:31` Mở `Tools > Antigravity MCP > Control Panel`, kiểm tra cổng `127.0.0.1` và bật công tắc `Allow AI Write Actions` (tự khóa sau 15 phút).
-4. `00:43` Chạy `unity_batch_ui` cùng `unity_universal_serialized_batch` gán `ObjectReference`, sau đó bấm `Ctrl + Z` một lần để hoàn tác trọn batch.
-5. `00:55` Kích hoạt tùy chọn Multi-Agent (`-InitMultiAgent`), chạy song song Gemini và Codex trên nhánh ảo rồi kiểm chứng `comment-guard.mjs verify`.
+1. Phần 1 (Cài đặt từ đầu): mở kho GitHub, chạy lệnh một dòng trên PowerShell (`6/6` bài kiểm thử đạt), cài gói cầu nối trong Unity 6 qua `Window -> Package Manager` (`Install package from git URL`), chọn `Antigravity IDE` tại `Edit -> Preferences -> External Tools` để sửa lỗi `CS0229`, và kiểm tra khóa an toàn tại `Tools -> Antigravity MCP -> Control Panel`.
+2. Phần 2 (Phối hợp Multi-Agent và chạy Live MCP): cài bộ khung đa agent bằng `-InitMultiAgent`, gửi yêu cầu kiểm tra Tầng 1 chỉ đọc, bật khóa 2 lớp `Allow AI Write Actions`, duyệt để AI dựng trực tiếp `HUD Canvas` (`TitlePanel`, `StartButton`) trong Unity 6, hoàn tác trọn batch bằng một lần `Ctrl + Z`, xem `Audit Log` và chạy kiểm chứng `manage_virtual_branch.mjs`, `scan-csharp-rules.mjs`, `comment-guard.mjs`.
 
 ## Tổng quan 18 công cụ MCP
 
