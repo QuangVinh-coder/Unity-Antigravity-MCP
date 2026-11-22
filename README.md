@@ -91,13 +91,19 @@ Vào `Tools > Antigravity MCP > Control Panel` trong Unity Editor để theo dõ
 - Hộp chọn `Require Unity Popup Confirmation Per Batch` bật thêm hộp thoại `Cho phép / Từ chối` ngay trong Unity trước từng batch.
 - Hai nút thao tác nhanh gồm `Sync .csproj & .sln Now` (tái sinh file dự án C# sau khi thêm `.asmdef`) và `Restart Bridge Server` (khởi động lại HTTP loopback cục bộ). Bảng Audit Log bên dưới lưu 100 thao tác ghi gần nhất trong phiên.
 
-### Hướng dẫn xem và quay video demo
+### Video hướng dẫn thao tác từng bước
 
-GitHub hỗ trợ kéo thả trực tiếp file `.mp4` hoặc `.mov` vào mô tả bản phát hành hoặc trình sửa README trên web để phát ngay trong trình duyệt. Các bản ghi hình demo theo từng phiên bản được đính kèm trên trang GitHub Releases theo 3 kịch bản kiểm chứng thực tế:
+Bản xem trước có phụ đề tiếng Việt chạy trực tiếp dưới đây (5 bước từ cài plugin, thêm gói UPM, bật khóa trong Control Panel, chạy batch dựng UI + hoàn tác `Ctrl + Z`, đến điều phối Multi-Agent với `comment-guard.mjs`):
 
-1. Cài đặt và chẩn đoán `CS0229`: chạy `install.ps1` hoặc `install.sh`, cài gói UPM, mở `Tools > Antigravity MCP > Control Panel` và chạy `unity_inspect_csharp_project`.
-2. Dựng UI và hoàn tác trong 1 bước: bật `Allow AI Write Actions`, chạy `unity_batch_ui` (uGUI hoặc UI Toolkit `.uxml`/`.uss`) cùng `unity_universal_serialized_batch` gán `ObjectReference` (`hierarchy:`, `asset:`, `sprite:`, `guid:`), rồi bấm `Ctrl + Z` trong Unity để hoàn tác cả batch.
-3. Điều phối Multi-Agent: chạy song song nhánh ảo `agents/branches/` giữa Gemini và Codex, sau đó chạy `comment-guard.mjs verify` để xác nhận phần code giữ nguyên sau bước thêm comment.
+![Video hướng dẫn thao tác từng bước Unity-Antigravity-MCP có phụ đề tiếng Việt](assets/docs/demo-walkthrough-preview.gif)
+
+Các mốc nội dung chính trong bản hướng dẫn (`74s`, `1920x1080`):
+
+1. `00:08` Cài plugin vào Antigravity IDE bằng lệnh một dòng và xác nhận `6/6` bài kiểm thử tự động đạt.
+2. `00:19` Cài gói cầu nối trong Unity 6 qua `Window > Package Manager` (UPM Git URL) và chọn `Antigravity IDE` làm External Script Editor để sửa `CS0229`.
+3. `00:31` Mở `Tools > Antigravity MCP > Control Panel`, kiểm tra cổng `127.0.0.1` và bật công tắc `Allow AI Write Actions` (tự khóa sau 15 phút).
+4. `00:43` Chạy `unity_batch_ui` cùng `unity_universal_serialized_batch` gán `ObjectReference`, sau đó bấm `Ctrl + Z` một lần để hoàn tác trọn batch.
+5. `00:55` Kích hoạt tùy chọn Multi-Agent (`-InitMultiAgent`), chạy song song Gemini và Codex trên nhánh ảo rồi kiểm chứng `comment-guard.mjs verify`.
 
 ## Tổng quan 18 công cụ MCP
 
