@@ -1,15 +1,15 @@
-﻿# Unity-Antigravity-MCP — One-Line Installer for Windows (PowerShell)
-# Cách chạy:
-#   irm https://raw.githubusercontent.com/QuangVinh-coder/Unity-Antigravity-MCP/main/install.ps1 | iex
-# Hoặc sau khi clone:
-#   .\install.ps1
-#   .\install.ps1 -InitMultiAgent "D:\Path\To\YourUnityProject"
-
 param(
     [string]$RepoUrl = "https://github.com/QuangVinh-coder/Unity-Antigravity-MCP.git",
     [string]$InstallDir = (Join-Path $env:USERPROFILE ".gemini\config\plugins\unity-antigravity-mcp"),
     [string]$InitMultiAgent = ""
 )
+
+# Unity-Antigravity-MCP - One-Line Installer for Windows (PowerShell 5.1 & 7+)
+# Usage:
+#   irm https://raw.githubusercontent.com/QuangVinh-coder/Unity-Antigravity-MCP/main/install.ps1 | iex
+# Or after cloning:
+#   .\install.ps1
+#   .\install.ps1 -InitMultiAgent "D:\Path\To\YourUnityProject"
 
 $ErrorActionPreference = "Stop"
 
