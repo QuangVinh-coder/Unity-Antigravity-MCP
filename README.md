@@ -120,11 +120,11 @@ Nếu máy bạn có cả Antigravity IDE (Gemini) và Codex CLI (`codex`), bạ
 
 ```powershell
 # Windows
-.\install.ps1 -InitMultiAgent "D:\Path\To\YourUnityProject"
+& "$HOME\.gemini\config\plugins\unity-antigravity-mcp\install.ps1" -InitMultiAgent "D:\Path\To\YourUnityProject"
 ```
 ```bash
 # macOS / Linux
-./install.sh --init-multi-agent /path/to/your/unity-project
+"$HOME/.gemini/config/plugins/unity-antigravity-mcp/install.sh" --init-multi-agent /path/to/your/unity-project
 ```
 
 ![Kiến trúc Multi-Agent Orchestrator chia nhánh ảo agents/branches/ giữa Gemini và Codex kèm comment-guard.mjs](assets/docs/multi-agent-orchestrator.svg)

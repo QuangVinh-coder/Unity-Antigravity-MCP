@@ -4,16 +4,16 @@ Bộ khung tùy chọn này dành cho máy có cả Antigravity IDE (Gemini) và
 
 ## 1. Cài đặt vào dự án Unity mục tiêu
 
-Từ thư mục đã clone `Unity-Antigravity-MCP`, chạy lệnh installer kèm đường dẫn tới dự án Unity:
+Sau khi đã cài plugin ở bước 1 (vào `~/.gemini/config/plugins/unity-antigravity-mcp/`), chạy lệnh installer từ bất kỳ thư mục nào kèm đường dẫn tới dự án Unity:
 
 Windows (PowerShell):
 ```powershell
-.\install.ps1 -InitMultiAgent "D:\Path\To\YourUnityProject"
+& "$HOME\.gemini\config\plugins\unity-antigravity-mcp\install.ps1" -InitMultiAgent "D:\Path\To\YourUnityProject"
 ```
 
 macOS hoặc Linux (Bash):
 ```bash
-./install.sh --init-multi-agent /path/to/your/unity-project
+"$HOME/.gemini/config/plugins/unity-antigravity-mcp/install.sh" --init-multi-agent /path/to/your/unity-project
 ```
 
 Script sao chép 3 thành phần vào thư mục gốc của dự án mục tiêu:
